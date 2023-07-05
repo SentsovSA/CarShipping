@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment"
+    android:background="@color/mainColor">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolBar"/>
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="@dimen/search_btn_dimensions"
+        android:layout_height="@dimen/search_btn_dimensions"
+        android:background="@drawable/search_4687318"
+        android:layout_marginTop="@dimen/search_button_margin_top"
+        android:layout_marginStart="@dimen/search_btn_margin_left"
+        android:contentDescription="@string/search_icon" />
+
+    <view
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="match_parent"
+        android:layout_height="482dp"/>
+
+</FrameLayout>
